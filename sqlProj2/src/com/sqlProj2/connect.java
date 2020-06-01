@@ -14,7 +14,7 @@ public class connect {
 		try
 		{
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/finalproject?serverTimezone=UTC","root","12Hustlegang34");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/finalproject?serverTimezone=UTC","root","");
 			
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery("SELECT * FROM finalproject.masterscplist Where Title like '%"+ text+"%'");
