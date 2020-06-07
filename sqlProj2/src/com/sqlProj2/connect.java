@@ -87,7 +87,7 @@ public class connect {
 		try
 		{
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/finalproject?serverTimezone=UTC","root","12Hustlegang34");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/finalproject?serverTimezone=UTC","root","");
 			
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery("SELECT * FROM finalproject.ikea_names Where name like '%"+text+"%'\n" + 
@@ -133,7 +133,7 @@ public class connect {
 		try
 		{
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/finalproject?serverTimezone=UTC","root","12Hustlegang34");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/finalproject?serverTimezone=UTC","root","");
 			
 			Statement stmt = con.createStatement();
 			ResultSet rs = stmt.executeQuery("SELECT * FROM finalproject.bearbase Where 'Character' like '%"+text+"%'\n" + 
